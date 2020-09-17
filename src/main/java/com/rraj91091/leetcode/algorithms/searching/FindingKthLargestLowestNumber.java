@@ -1,7 +1,7 @@
-package com.rraj91091.leetcode.algorithms.searching;
+package main.java.com.rraj91091.leetcode.algorithms.searching;
 
-import com.rraj91091.leetcode.PrintUtils;
 import com.rraj91091.leetcode.algorithms.sorting.HeapSort;
+import main.java.com.rraj91091.leetcode.utils.PrintUtils;
 
 public class FindingKthLargestLowestNumber {
 
@@ -20,7 +20,7 @@ public class FindingKthLargestLowestNumber {
             arr = HeapSort.buildMaxHeap(arr, i, 0);
         }
 
-        System.out.println("Resulting Array: " + PrintUtils.printArray(arr));
+        PrintUtils.printArray(arr);
         return arr[arr.length-k];
     }
 

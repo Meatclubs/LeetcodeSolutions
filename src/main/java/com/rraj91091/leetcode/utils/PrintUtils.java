@@ -1,16 +1,15 @@
-package com.rraj91091.leetcode;
+package main.java.com.rraj91091.leetcode.utils;
 
 public class PrintUtils {
 
-    public static String printArray(int[] arr) {
-        String arrayAsString = "";
+    public static void printArray(int[] arr) {
         for(int i=0; i<arr.length; i++) {
             if(i != 0) {
-                arrayAsString = arrayAsString.concat(",");
+                System.out.print(",");
             }
-            arrayAsString = arrayAsString.concat(String.valueOf(arr[i]));
+            System.out.print(arr[i]);
         }
-        return arrayAsString;
+        System.out.println();
     }
 
 }
