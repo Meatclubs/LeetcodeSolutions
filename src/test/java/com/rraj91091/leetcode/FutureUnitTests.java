@@ -2,27 +2,13 @@ package com.rraj91091.leetcode;
 
 import com.rraj91091.leetcode.algorithms.searching.BinarySearch;
 import com.rraj91091.leetcode.algorithms.searching.FindingKthLargestLowestNumber;
-import com.leetcode.algorithms.sorting.*;
+import com.rraj91091.leetcode.algorithms.sorting.*;
 import com.rraj91091.leetcode.datastructures.linkedlists.DoublyLinkedList;
 import com.rraj91091.leetcode.datastructures.linkedlists.SinglyLinkedList;
-import com.rraj91091.leetcode.leetcode.RomanToInt;
-import com.rraj91091.leetcode.algorithms.sorting.*;
 
-public class MainClass {
+//TODO convert all of these unti JUNIT tests
 
-    public static void main(String[] args) {
-        //testDoublyLinkedList();
-        //testSingularLinkedList();
-        //testMergeSort();
-        //testQuickSort();
-        //testInsertionSort();
-        //testBinarySearch();
-        //testHeapSort();
-        //testFindingKthLargestLowestNumber();
-        //testMerge();
-
-        System.out.println(RomanToInt.romanToInt("XXIV"));
-    }
+public class FutureUnitTests {
 
     static void testMerge() {
         int[] A = {1,2,3,4,5,0,0,0};
@@ -62,7 +48,7 @@ public class MainClass {
         int[] arr = {6,5,4,1,3,9,8,2,0,7};
 
         int[] result = HeapSort.sortAscending(arr);
-        System.out.println(PrintUtils.printArray(result));
+        System.out.println(com.rraj91091.leetcode.PrintUtils.printArray(result));
     }
 
     static void testBinarySearch() {
@@ -79,7 +65,7 @@ public class MainClass {
         }
 
         int[] result = InsertionSort.sort(arr);
-        System.out.println(PrintUtils.printArray(result));
+        System.out.println(com.rraj91091.leetcode.PrintUtils.printArray(result));
     }
 
     static void testQuickSort() {
@@ -89,14 +75,14 @@ public class MainClass {
         }
 
         int[] result = QuickSort.sort(arr, 0, arr.length-1);
-        System.out.println(PrintUtils.printArray(result));
+        System.out.println(com.rraj91091.leetcode.PrintUtils.printArray(result));
     }
 
     static void testMergeSort() {
         int[] arr = {7,5,3,2,6,4,9,8,1,0};
 
         int[] result = MergeSort.sort(arr);
-        System.out.println(PrintUtils.printArray(result));
+        System.out.println(com.rraj91091.leetcode.PrintUtils.printArray(result));
     }
 
     static void testDoublyLinkedList() {
