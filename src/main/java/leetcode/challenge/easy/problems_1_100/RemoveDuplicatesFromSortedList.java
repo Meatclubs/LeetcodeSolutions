@@ -33,7 +33,7 @@ public class RemoveDuplicatesFromSortedList {
         return head;
     }
 
-    public class ListNode {
+    class ListNode {
         int val;
         ListNode next;
         ListNode() {}
