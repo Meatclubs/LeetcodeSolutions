@@ -1,4 +1,4 @@
-package main.java.leetcode.challenge.easy;
+package main.java.leetcode.challenge.easy.problems_1_100;
 
 /**
  * Given a non-empty array of digits representing a non-negative integer, increment one to the integer.

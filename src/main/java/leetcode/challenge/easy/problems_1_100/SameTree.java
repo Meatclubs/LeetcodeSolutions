@@ -1,4 +1,4 @@
-package main.java.leetcode.challenge.easy;
+package main.java.leetcode.challenge.easy.problems_1_100;
 
 /**
  * Given two binary trees, write a function to check if they are the same or not.

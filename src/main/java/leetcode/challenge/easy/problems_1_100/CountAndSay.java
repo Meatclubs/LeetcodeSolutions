@@ -1,4 +1,4 @@
-package main.java.leetcode.challenge.easy;
+package main.java.leetcode.challenge.easy.problems_1_100;
 
 /**
  * The count-and-say sequence is the sequence of integers with the first five terms as following:

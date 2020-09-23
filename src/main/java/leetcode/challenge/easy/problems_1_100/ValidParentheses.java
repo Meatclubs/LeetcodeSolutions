@@ -1,4 +1,4 @@
-package main.java.leetcode.challenge.easy;
+package main.java.leetcode.challenge.easy.problems_1_100;
 
 /**
  * Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.

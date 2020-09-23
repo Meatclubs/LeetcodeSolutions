@@ -1,17 +1,18 @@
-package main.java.leetcode.challenge.easy;
+package main.java.leetcode.challenge.easy.problems_1_100;
 
+/**
+ * Given a sorted linked list, delete all duplicates such that each element appear only once.
+ *
+ * Example 1:
+ * Input: 1->1->2
+ * Output: 1->2
+ *
+ * Example 2:
+ * Input: 1->1->2->3->3
+ * Output: 1->2->3
+ */
 public class RemoveDuplicatesFromSortedList {
 
-    /**
-     * Definition for singly-linked list.
-     * public class ListNode {
-     *     int val;
-     *     ListNode next;
-     *     ListNode() {}
-     *     ListNode(int val) { this.val = val; }
-     *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-     * }
-     */
     public ListNode deleteDuplicates(ListNode head) {
 
         ListNode iterator = head;

@@ -1,4 +1,4 @@
-package main.java.leetcode.challenge.easy;
+package main.java.leetcode.challenge.easy.problems_1_100;
 
 /**
  * Write a function to find the longest common prefix string amongst an array of strings.

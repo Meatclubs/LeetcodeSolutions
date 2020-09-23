@@ -1,4 +1,4 @@
-package main.java.leetcode.challenge.easy;
+package main.java.leetcode.challenge.easy.problems_1_100;
 
 /**
  * Given a string s consists of upper/lower-case alphabets and empty space characters ' ',

@@ -1,4 +1,4 @@
-package main.java.leetcode.challenge.easy;
+package main.java.leetcode.challenge.easy.problems_1_100;
 
 /**
  * Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.

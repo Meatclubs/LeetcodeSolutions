@@ -1,4 +1,4 @@
-package main.java.leetcode.challenge.easy;
+package main.java.leetcode.challenge.easy.problems_101_200;
 
 /**
  * Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).

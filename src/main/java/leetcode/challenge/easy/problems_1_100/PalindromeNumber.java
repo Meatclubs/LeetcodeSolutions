@@ -1,4 +1,4 @@
-package main.java.leetcode.challenge.easy;
+package main.java.leetcode.challenge.easy.problems_1_100;
 
 /**
  * Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
