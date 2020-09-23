@@ -12,7 +12,7 @@ package main.java.leetcode.challenge.easy;
  *         [1,2,3],   [1,2,3]
  *
  * Output: true
- * 
+ *
  * Example 2:
  * Input:     1         1
  *           /           \
@@ -53,7 +53,7 @@ public class SameTree {
     /**
      * Definition for a binary tree node.
      */
-    public class TreeNode {
+    class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
