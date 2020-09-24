@@ -19,7 +19,7 @@ package main.java.leetcode.challenge.easy.problems_1_100;
  */
 public class PalindromeNumber {
 
-    public static boolean isPalindrome(int x) {
+    public boolean isPalindrome(int x) {
         String xx = String.valueOf(x);
 
         for(int i = 0; i<xx.length(); i++) {
@@ -29,5 +29,27 @@ public class PalindromeNumber {
         }
 
         return true;
+    }
+
+    /**
+     * Another method without converting x into a string
+     */
+    public boolean isPalindromeV2(int x) {
+        if(x < 0 || ((x % 10 == 0) && x > 0)) {
+            return false;
+        }
+        if(x < 10) {
+            return true;
+        }
+
+        int original = x;
+        int reverseNum = 0;
+        while(original > 0) {
+            int lastDigit = original % 10;
+            reverseNum = (reverseNum * 10) + lastDigit;
+            original = original / 10; //remove last digit;
+        }
+
+        return (x == reverseNum) ;
     }
 }
