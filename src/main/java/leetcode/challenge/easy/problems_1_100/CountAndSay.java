@@ -39,7 +39,7 @@ public class CountAndSay {
         }
 
         int p = 0;
-        String result = "";
+        StringBuilder resSB = new StringBuilder();
 
         while(p < s.length()) {
             char c = s.charAt(p);
@@ -49,11 +49,12 @@ public class CountAndSay {
                 i++;
             }
 
-            result = result + i + c;
+            resSB.append(i).append(c);
+
             p += i;
         }
 
-        return countAndSay(result,--n);
+        return countAndSay(resSB.toString(),--n);
     }
 
 }
