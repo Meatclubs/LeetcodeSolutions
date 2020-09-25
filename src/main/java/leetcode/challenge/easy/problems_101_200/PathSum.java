@@ -28,6 +28,9 @@ public class PathSum {
 
         curTotal += node.val;
 
+        /**
+         * if current total = sum, and node is a leaf node
+         */
         if(sum == curTotal && (node.left == null && node.right == null)) {
             return true;
         }
