@@ -34,16 +34,25 @@ public class IntersectionOfTwoLinkedLists {
         int aCount = 0;
         int bCount = 0;
 
+        /**
+         * get length of first list
+         */
         while(a != null) {
             a = a.next;
             aCount++;
         }
 
+        /**
+         * get length of second list
+         */
         while(b != null) {
             b = b.next;
             bCount++;
         }
 
+        /**
+         * Move the longer list down based on difference in lengths
+         */
         if(aCount > bCount) {
             int diff = aCount - bCount;
             for(int i=0; i<diff; i++) {
@@ -56,6 +65,9 @@ public class IntersectionOfTwoLinkedLists {
             }
         }
 
+        /**
+         * traverse both lists at the same time until they meet at the intersection
+         */
         while(headA != headB) {
             headA = headA.next;
             headB = headB.next;
@@ -64,7 +76,7 @@ public class IntersectionOfTwoLinkedLists {
         return headA;
     }
 
-    public class ListNode {
+    class ListNode {
         int val;
         ListNode next;
         ListNode(int x) {
