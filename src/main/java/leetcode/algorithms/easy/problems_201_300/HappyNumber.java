@@ -1,4 +1,4 @@
-package main.java.leetcode.algorithms.easy.problems_101_200;
+package main.java.leetcode.algorithms.easy.problems_201_300;
 
 import java.util.HashSet;
 
