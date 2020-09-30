@@ -1,4 +1,4 @@
-package main.java.leetcode.algorithms.easy.problems_201_300;
+package main.java.leetcode.algorithms.easy.problems_301_400;
 
 /**
  * Given an integer, write a function to determine if it is a power of three.
@@ -24,7 +24,7 @@ package main.java.leetcode.algorithms.easy.problems_201_300;
  */
 public class PowerOfThree {
     /**
-     * Naive looping
+     * Naive looping, generally faster and more memory efficient than the v2 solution
      */
     public boolean isPowerOfThree(int n) {
         if (n < 1) {
