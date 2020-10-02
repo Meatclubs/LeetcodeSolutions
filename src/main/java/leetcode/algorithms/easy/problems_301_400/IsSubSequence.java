@@ -46,4 +46,15 @@ public class IsSubSequence {
 
         return true;
     }
+
+    /**
+     * TODO
+     * follow up solution for large numbers of S can be to initialize T into a HashMap<Char,Char[]>()
+     * to store the mappings of the first character and every succeeding character.
+     * So the algorithm starts at the first letter of S and checks if there's a key-value pair matching to the
+     * first and 2nd letters of S. If yes, it moves to check the same with the 2nd and 3rd letters of S and so on.
+     *
+     * If it reaches the end of S, then S is a subsequence of T. If it fails to find a matching key-value pair,
+     * then it is not a subsequence.
+     */
 }
