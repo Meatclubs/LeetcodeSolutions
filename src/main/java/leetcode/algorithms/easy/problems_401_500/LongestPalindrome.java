@@ -14,7 +14,7 @@ package main.java.leetcode.algorithms.easy.problems_401_500;
  * Example 2:
  * Input: s = "a"
  * Output: 1
- * 
+ *
  * Example 3:
  * Input: s = "bb"
  * Output: 2
