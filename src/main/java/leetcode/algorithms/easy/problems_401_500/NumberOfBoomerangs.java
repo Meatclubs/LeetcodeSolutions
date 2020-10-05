@@ -9,7 +9,7 @@ import java.util.HashMap;
  * and coordinates of points are all in the range [-10000, 10000] (inclusive).
  *
  * Example:
- * 
+ *
  * Input:
  * [[0,0],[1,0],[2,0]]
  *
