@@ -23,7 +23,7 @@ import java.util.Stack;
  * Explanation:
  *     For number 2 in the first array, the next greater number for it in the second array is 3.
  *     For number 4 in the first array, there is no next greater number for it in the second array, so output -1.
- *     
+ *
  * Note:
  * All elements in nums1 and nums2 are unique.
  * The length of both nums1 and nums2 would not exceed 1000.
