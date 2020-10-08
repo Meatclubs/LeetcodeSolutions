@@ -13,7 +13,7 @@ package main.java.leetcode.algorithms.easy.problems_601_700;
  * Example 2:
  * Input: flowerbed = [1,0,0,0,1], n = 2
  * Output: False
- * 
+ *
  * Note:
  * The input array won't violate no-adjacent-flowers rule.
  * The input array size is in the range of [1, 20000].
