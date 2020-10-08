@@ -13,7 +13,7 @@ package main.java.leetcode.algorithms.easy.problems_501_600;
  * Example 1:
  * Input: "PPALLP"
  * Output: True
- * 
+ *
  * Example 2:
  * Input: "PPALLL"
  * Output: False
