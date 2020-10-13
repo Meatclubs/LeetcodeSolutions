@@ -1,4 +1,4 @@
-package main.java.leetcode.algorithms.easy;
+package main.java.leetcode.algorithms.easy.problems_801_900;
 
 import java.util.HashSet;
 
@@ -30,7 +30,7 @@ import java.util.HashSet;
  * Each words[i] will have length in range [1, 12].
  * words[i] will only consist of lowercase letters.
  */
-public class problems_801_900 {
+public class UniqueMorseCodeStrings {
     public int uniqueMorseRepresentations(String[] words) {
         String[] morseCodes = {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--",
                 "-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
