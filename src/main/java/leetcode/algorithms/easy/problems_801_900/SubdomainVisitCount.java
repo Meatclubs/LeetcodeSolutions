@@ -3,6 +3,7 @@ package main.java.leetcode.algorithms.easy.problems_801_900;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * A website domain like "discuss.leetcode.com" consists of various subdomains. At the top level, we have "com",
@@ -43,32 +44,30 @@ public class SubdomainVisitCount {
         HashMap<String,Integer> map = new HashMap<>();
 
         for(String cpdomain : cpdomains) {
-            String[] countAndDomain = cpdomain.split(" ");
-            Integer count =  + Integer.valueOf(countAndDomain[0]);
-            String domain = countAndDomain[1];
-            String subDomain = "";
+            String domain = cpdomain.split(" ")[1];
+            Integer count =  + Integer.valueOf(cpdomain.split(" ")[0]);
+            String[] subDomains = domain.split("\\.");
 
-            if(domain.indexOf(".") != domain.lastIndexOf(".")) {
+            if(subDomains.length == 3) {
                 map.put(domain, map.getOrDefault(domain,0) + count);
 
-                subDomain = domain.substring(domain.indexOf(".")+1);
+                String subDomain = subDomains[1].concat(".").concat(subDomains[2]);
                 map.put(subDomain, map.getOrDefault(subDomain,0) + count);
 
-                subDomain = domain.substring(domain.lastIndexOf(".")+1);
-                map.put(subDomain, map.getOrDefault(subDomain,0) + count);
+                map.put(subDomains[2], map.getOrDefault(subDomains[2],0) + count);
 
-            } else if(domain.indexOf(".") == domain.lastIndexOf(".")) {
+            } else if(subDomains.length == 2) {
                 map.put(domain, map.getOrDefault(domain,0) + count);
-
-                subDomain = domain.substring(domain.indexOf(".")+1);
-                map.put(subDomain, map.getOrDefault(subDomain,0) + count);
+                map.put(subDomains[1], map.getOrDefault(subDomains[1],0) + count);
             }
         }
 
         //add counts and domains to result array
         List<String> results = new ArrayList<>();
-        for(String key : map.keySet()) {
-            results.add(map.get(key) + " " + key);
+        for (Map.Entry<String,Integer> entry : map.entrySet()){
+            String result = Integer.toString(entry.getValue()).concat(" ").concat(entry.getKey());
+
+            results.add(result);
         }
 
         return results;
