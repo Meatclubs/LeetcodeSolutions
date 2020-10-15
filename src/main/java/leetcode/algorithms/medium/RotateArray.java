@@ -1,4 +1,4 @@
-package main.java.leetcode.algorithms.easy.problems_101_200;
+package main.java.leetcode.algorithms.medium;
 
 /**
  * Given an array, rotate the array to the right by k steps, where k is non-negative.

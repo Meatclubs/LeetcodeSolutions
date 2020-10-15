@@ -1,4 +1,4 @@
-package main.java.leetcode.algorithms.easy.problems_401_500;
+package main.java.leetcode.algorithms.medium;
 
 import java.util.Arrays;
 

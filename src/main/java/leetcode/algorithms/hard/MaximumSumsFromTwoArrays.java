@@ -1,4 +1,4 @@
-package main.java.leetcode.algorithms.interview;
+package main.java.leetcode.algorithms.hard;
 
 import main.java.leetcode.others.utils.PrintUtils;
 
