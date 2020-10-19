@@ -1,4 +1,4 @@
-package main.java.leetcode.algorithms.easy.problems_1001_1100;
+package main.java.leetcode.algorithms.easy.problems_1101_1200;
 
 /**
  * We distribute some number of candies, to a row of n = num_people people in the following way:
