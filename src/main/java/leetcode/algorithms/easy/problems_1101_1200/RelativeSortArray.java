@@ -19,6 +19,10 @@ package main.java.leetcode.algorithms.easy.problems_1101_1200;
 import java.util.*;
 
 public class RelativeSortArray {
+
+    /**
+     * using hashmap to store counts
+     */
     public int[] relativeSortArray(int[] arr1, int[] arr2) {
         if(arr1.length < 2 ) return arr1;
 
@@ -48,6 +52,38 @@ public class RelativeSortArray {
         for(int i : list) {
             arr1[index] = i;
             index++;
+        }
+
+        return arr1;
+    }
+
+
+    /**
+     * using array to store counts
+     */
+    public int[] relativeSortArrayV2(int[] arr1, int[] arr2) {
+        int[] countingArray  = new int[1001];
+
+        for(int i=0;i<arr1.length;i++) {
+            countingArray[arr1[i]]++;
+        }
+
+        int index = 0;
+
+        for(int val : arr2) {
+            while(countingArray[val] > 0) {
+                arr1[index] = val;
+                index++;
+                countingArray[val]--;
+            }
+        }
+
+        for(int i=0;i<countingArray.length;i++) {
+            while(countingArray[i] > 0) {
+                arr1[index] = i;
+                index++;
+                countingArray[i]--;
+            }
         }
 
         return arr1;
